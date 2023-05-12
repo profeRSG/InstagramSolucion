@@ -21,7 +21,7 @@ public class Foto implements IFoto{
 	public int compareTo(IFoto otraFoto) {
 		return Integer.compare(otraFoto.getNumeroHashtag(),this.getNumeroHashtag());
 		//comparamos ambos numeros, para ello utilizamos el compare
-		// de Integer, que ya devuelve cero si son iguales, 1, si uno e smayor, y
+		// de Integer, que ya devuelve cero si son iguales, 1, si uno es mayor, y
 		//-1 si el otro es mayor.
 		//Seria el equivalente a escribir:
 		//int resultado=1;
@@ -55,7 +55,7 @@ public class Foto implements IFoto{
 	public boolean hasHashtag(IHashtag hashtag) {
 		return etiquetas.contains(hashtag);//Devolvemos el resultado de 
 		//comprobar si la lista contiene el hashtag. Para que este metodo
-		//fucnione la clase hastag tiene que tener definido un equals.
+		//funcione la clase hastag tiene que tener definido un equals.
 	}
 
 	@Override
